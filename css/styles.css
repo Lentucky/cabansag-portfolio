@@ -1,0 +1,57 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding-top: 56px;
+    
+    background-color: gray;
+}
+
+*{
+    border: blue 1px solid;
+}
+
+section{
+
+}
+
+/* main */
+
+/* ================= */
+
+/* about */
+
+/* ================= */
+
+/* experience */
+
+/* ================= */
+
+/* skills */
+.skills-div{
+    display: flex;
+    align-items: center;          /* Center items vertically within the container */
+    justify-content: center;      /* Center items horizontally within the container */
+    flex-wrap: wrap;              /* Allow items to wrap onto multiple lines */
+    min-height: 100vh;                /* Full viewport height, adjust if needed */
+    padding: 20px 50px 50px 20px;                /* Padding around the container */
+    box-sizing: border-box;       /* Include padding and border in the element’s total width and height */
+    background-color: red;  
+    margin: auto 0;
+    gap: 100px;
+}
+
+.img-svg{
+    width: 140px;
+    height: 140px;
+}
+
+
+/* ================= */
+
+/* education */
+
+/* ================= */
+
+/* contact */
+
+/* ================= */
