@@ -7,112 +7,138 @@
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid sticky-top">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#main"><img src="img/absolute/logo.png" class="nav-logo" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse d-flex flex-column align-items-end" id="navbarNavAltMarkup">
-        <ul class="navbar-nav me-2 ml-auto float-right">
-            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        <ul class="navbar-nav me-2 ml-auto float-right me-5">
+            <li class="nav-item mx-3"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item mx-3"><a href="#experience" class="nav-link">Experience</a></li>
+            <li class="nav-item mx-3"><a href="#education" class="nav-link">Education</a></li>
+            <li class="nav-item mx-3"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item mx-3"><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
         </div>
     </div>
     </nav>
 
-    <section id="main">
-        <h1>Hi, My Name is Allen Cabansag</h1>
-        
-        <h3>I am a Web Developer</h3>
-        <p>
-            I am Web Programmer with a passion in graphic design, 
-            providing simple and elegant solutions. I enjoy collaborating 
-            with fellow developers and clients to create excellent work 
-            aligned with their needs and goals
-        </p>
+    <section class="main" id="main">
+        <div class="main-word">
+            <h1 class="header-h1 main-h1"><span style="color:#8c8c8c">Hi, My Name is</span> Allen Cabansag</h1>
+            <h3 class="main-h3">I am a <span style="color:#A83A2B">Web Developer</span></h3>
+            <p>
+                I am Web Programmer with a passion in graphic design,
+                providing simple and elegant solutions. I enjoy collaborating
+                with fellow developers and clients to create excellent work
+                aligned with their needs and goals
+            </p>
 
-        <img src="img/absolute/allen_1.png" alt="Allen_1">
+            <a href="#about" class="btn btn-red">Read more?</a>
+        </div>
+        <img src="img/absolute/allen_1.png" alt="Allen_1" class = "main-img">
     </section>
 
-    <section id="about">
+    <section class="about" id="about">
 
-        <div>
-            <img src="img/absolute/allen_2.png" alt="Allen_2">
+        <img class="about-img" src="img/absolute/allen_2.png" alt="Allen_2">
+
+        <div class="about-word">
+            <h1 class="about-h1 header-h1">Who am I?</h1>
+            
+            <p >
+                I am Allen Cabansag, I am a Web Developer
+                homegrown from National University of Laguna.
+                I enjoy working both on graphic and web design,
+                with a strong focus on creating elegant and
+                simplistic models.
+            </p>
+
+            <p>
+                I work using Sass for my front-end design while
+                using my knowledge in PHP and MySQL for the back-end
+                design using the help of the Laravel Framework
+            </p>
+        </div>
+    </section>
+        
+    <section class="experience" id="experience">
+        <h1 class="header-h1 ex-h1 ">Experience</h1>
+            <div class="ex">
+                <div class="ex-set-1">
+                    <div class="card">
+                        <img class="card-img" src="img/absolute/sugarstop.png" alt="sugarstop">
+                        <div class="card-container">
+                            <h4>SUGARSTOP</h4>
+                            <p>I LED A PROJECT THAT DEVELOPED A FULLY FUNCTIONAL POINT TO SALE WEBSITE</p>
+                        </div>
+                    </div>
+                    <div class="card card-2">
+                        <img class="card-img" src="img/absolute/evaluation.png" alt="evaluation-form">
+                        <div class="card-container">
+                            <h4>EVALUATION FORM</h4>
+                            <p>HELPED IN DEVELOPNG A SAMPLE EVALUATION FORM THAT BOTH STUDENTS AND TEACHERS CAN USE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ex-set-2">
+                    <div class="card">
+                        <img class="card-img" src="img/absolute/ax_fitness.png" alt="ax-fitness">
+                        <div class="card-container">
+                            <h4>AX-FITNESS</h4>
+                            <p>I LED A PROJECT THAT DEVELOPED A FULLY FUNCTIONAL PROMOTIONAL WEBSITE FOR A LOCAL FITNESS GYM BUSINESS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+
+    <section class="education" id="education">
+        <h1 class="educ-h1 header-h1">Education</h1>
+
+        <div class="education-content">
+            <div class="education-word">
+                <h2 style="color:#79281d">LYCEUM OF ALABANG</h2>
+                <h3>(SY 2021-2022)</h3>
+                <ol>
+                    <li>GRADUATED WITH HONORS</li>
+                    <li>BEST IN THESIS WRITING</li>
+                    <li>BEST IN WEB PROGRAMMING</li>
+                </ol>
+            </div>
+
+            <img class="educ-img" src="img/absolute/loa.png" alt="loa">
         </div>
 
-        <h1>Who am I?</h1>
-        
-        <p>
-            I am Allen Cabansag, I am a Web Developer
-            homegrown from National University of Laguna.
-            I enjoy working both on graphic and web design,
-            with a strong focus on creating elegant and
-            simplistic models.
-
-            I work using Sass for my front-end design while
-            using my knowledge in PHP and MySQL for the back-end
-            design using the help of the Laravel Framework
-        </p>
-    </section>
-        
-    <section id="experience">
-        <h1>Experience</h1>
-            <div>
-                <img src="img/absolute/sugarstop.png" alt="sugarstop">
-                <h4>SUGARSTOP</h4>
-                <p>I LED A PROJECT THAT DEVELOPED A FULLY FUNCTIONAL POINT TO SALE WEBSITE</p>
+        <div class="education-content">
+            <img class="educ-img" src="img/absolute/nu.webp" alt="nu">
+            
+            <div class="education-word">
+                <div class="educ-header">
+                    <h2 style="color:#79281d">NATIONAL UNIVERSITY OF LAGUNA</h2>
+                    <h3>(SY 2022-2026)</h3>
+                </div>
+                <ol>
+                    <li>CREATIVE OFFICER IN STUDENT COUNCIL</li>
+                    <li>DEANS' LISTER 2022-2023</li>
+                    <li>DEANS' LISTER 2023-2024</li>
+                </ol>
             </div>
-
-            <div>
-                <img src="img/absolute/ax_fitness.png" alt="ax-fitness">
-                <h4>AX-FITNESS</h4>
-                <p>I LED A PROJECT THAT DEVELOPED A FULLY FUNCTIONAL PROMOTIONAL WEBSITE FOR A LOCAL FITNESS GYM BUSINESS</p>
-            </div>
-
-            <div>
-                <img src="img/absolute/evaluation.png" alt="evaluation-form">
-                <h4>EVALUATION FORM</h4>
-                <p>HELPED IN DEVELOPNG A SAMPLE EVALUATION FORM THAT BOTH STUDENTS AND TEACHERS CAN USE</p>
-            </div>
-    </section>
-
-    <section id="education">
-        <h1>Education</h1>
-
-        <div>
-            <img src="img/absolute/loa.png" alt="loa">
-            <h2>LYCEUM OF ALABANG</h2>
-            <h3>(SY 2021-2022)</h3>
-
-            <ol>
-                <li>GRADUATED WITH HONORS</li>
-                <li>BEST IN THESIS WRITING</li>
-                <li>BEST IN WEB PROGRAMMING</li>
-            </ol>
-        </div>
-
-        <div>
-            <img src="img/absolute/nu.webp" alt="nu">
-            <h2>NATIONAL UNIVERSITY OF LAGUNA</h2>
-            <h3>(SY 2022-2026)</h3>
-
-            <ol>
-                <li>CREATIVE OFFICER IN STUDENT COUNCIL</li>
-                <li>DEANS' LISTER 2022-2023</li>
-                <li>DEANS' LISTER 2023-2024</li>
-            </ol>
         </div>
     </section>
 
     <section class="skills" id="skills">
-        <h1>SKills</h1>
+        <h1 class="skills-h1 header-h1">SKILLS</h1>
             <div class="skills-div">
                 <img src="img/svg/laravel.svg" alt="laravel" class="img-svg">
                 <img src="img/svg/sass.svg" alt="sass" class="img-svg">
@@ -129,19 +155,26 @@
     </section>
 
     <section id="contact">
-        <h1>Contact</h1>
+        <h1 class="contact-h1 header-h1">CONTACT ME</h1>
 
-        <div>
-            <img src="img/svg/linkedin.svg" alt="linkedin"><a href=""></a></img>
-            <img src="img/svg/github.svg" alt="github"><a href=""></a></img>
-            <img src="img/svg/facebook.svg" alt="facebook"><a href=""></a></img>
+        <div class="contact-links">
+            <img class="contact-svg" src="img/svg/linkedin.svg" alt="linkedin"><a href=""></a></img>
+            <img class="contact-svg" src="img/svg/github.svg" alt="github"><a href=""></a></img>
+            <img class="contact-svg" src="img/svg/facebook.svg" alt="facebook"><a href=""></a></img>
         </div>
 
-        <form action="">
-            <input type="text" name="" id="" placeholder="YOUR NAME">
-            <input type="text" name="" id="" placeholder="YOUR EMAIL">
-            <input type="text" name="" id="" placeholder="YOUR PHONE NO.">
-            <input type="textarea" name="" id="" placeholder="YOUR REQUEST">
+
+        <form class="cf">
+            <div class="half left cf">
+                <input type="text" id="name" placeholder="Name">
+                <input type="email" id="email" placeholder="Email address">
+                <input type="text" id="phone" placeholder="Your Phone Number">
+            </div>
+            <div class="half right cf">
+                <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+            </div>
+
+            <input type="submit" value="Submit" id="submit">
         </form>
     </section>
 
