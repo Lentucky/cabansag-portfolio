@@ -6,6 +6,9 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+
+
     <link rel="stylesheet" href="css/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,30 +16,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container-fluid sticky-top">
-        <a class="navbar-brand" href="#main"><img src="img/absolute/logo.png" class="nav-logo" alt=""></a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse d-flex flex-column align-items-end" id="navbarNavAltMarkup">
-        <ul class="navbar-nav me-2 ml-auto float-right me-5">
-            <li class="nav-item mx-3"><a href="#about" class="nav-link">About</a></li>
-            <li class="nav-item mx-3"><a href="#experience" class="nav-link">Experience</a></li>
-            <li class="nav-item mx-3"><a href="#education" class="nav-link">Education</a></li>
-            <li class="nav-item mx-3"><a href="#skills" class="nav-link">Skills</a></li>
-            <li class="nav-item mx-3"><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
+        
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <a class="navbar-brand" href="#main"><img src="img/absolute/logo.png" class="nav-logo" alt=""></a>
+        
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-3"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item mx-3"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item mx-3"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item mx-3"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item mx-3"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
     </div>
-    </nav>
+</nav>
+
 
     <section class="main" id="main">
         <div class="main-word">
             <h1 class="header-h1 main-h1"><span style="color:#8c8c8c">Hi, My Name is</span> Allen Cabansag</h1>
             <h3 class="main-h3">I am a <span style="color:#A83A2B">Web Developer</span></h3>
             <p>
-                I am Web Programmer with a passion in graphic design,
+                I am a Web Programmer with a passion in graphic design,
                 providing simple and elegant solutions. I enjoy collaborating
                 with fellow developers and clients to create excellent work
                 aligned with their needs and goals
@@ -44,7 +50,14 @@
 
             <a href="#about" class="btn btn-red">Read more?</a>
         </div>
-        <img src="img/absolute/allen_1.png" alt="Allen_1" class = "main-img">
+        
+        <div class="main-img">
+
+        </div>
+
+        <div class="main-img-wrapper">
+            <img src="img/absolute/allen_1.png" alt="Allen_1" class = "main-img">
+        </div>
     </section>
 
     <section class="about" id="about">
@@ -154,7 +167,7 @@
             </div>
     </section>
 
-    <section id="contact">
+    <section class="contact" id="contact">
         <h1 class="contact-h1 header-h1">CONTACT ME</h1>
 
         <div class="contact-links">
@@ -178,8 +191,5 @@
         </form>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

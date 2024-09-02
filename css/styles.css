@@ -36,7 +36,7 @@ a{
 .nav-logo{
     width: 5rem;
     height: auto;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 section{
@@ -115,7 +115,7 @@ section{
 .about-img{
     width: 40%;
     height: auto;
-    margin: auto 50px;
+    margin: 50px 50px;
 }
 
 .about-h1{
@@ -128,7 +128,7 @@ section{
 .experience{
     min-height: 100vh;
     background-color: black;
-    height: 110vh;
+    height: 120vh;
 }
 
 .ex{
@@ -141,7 +141,7 @@ section{
 .ex-h1{
     text-align: center;
     font-size: 5rem;
-    margin: 2rem auto;
+    margin: auto;
     padding-top: 20px;
 }
 
@@ -180,12 +180,12 @@ section{
 }
 .skills-div{
     display: flex;
-    align-items: center;          /* Center items vertically within the container */
-    justify-content: center;      /* Center items horizontally within the container */
-    flex-wrap: wrap;              /* Allow items to wrap onto multiple lines */
-    min-height: 100vh;                /* Full viewport height, adjust if needed */
-    padding: 20px 50px 50px 20px;                /* Padding around the container */
-    box-sizing: border-box;       /* Include padding and border in the element’s total width and height */
+    align-items: center;         
+    justify-content: center;      
+    flex-wrap: wrap;              
+    min-height: 100vh;                
+    padding: 20px 50px 50px 20px;                
+    box-sizing: border-box;       
     margin: auto 30em;
     gap: 100px;
 }
@@ -193,7 +193,6 @@ section{
 .skills-h1{
     text-align: center;
     font-size: 5rem;
-    margin: 2rem auto;
     font-weight: var(--font-bold);
 }
 
@@ -205,7 +204,7 @@ section{
 }
 
 .img-svg:hover {
-    transform: scale(1.2); /* Increase size by 20% on hover */
+    transform: scale(1.2); 
 }
 
 .img-svg > svg{
@@ -213,7 +212,7 @@ section{
 }
 
 .contact-svg:hover {
-    transform: scale(1.2); /* Increase size by 20% on hover */
+    transform: scale(1.2); 
 }
 
 /* ================= */
@@ -238,8 +237,8 @@ section{
 
 .education-word h2,
 .education-word h3 {
-    font-size: 2rem; /* Inherits the font-size from the parent */
-    font-weight: inherit; /* Inherits the font-weight from the parent */
+    font-size: 2rem;
+    font-weight: inherit; /
 }
 
 .educ-h1{
@@ -264,7 +263,6 @@ section{
 .contact-h1{
     text-align: center;
     font-size: 5rem;
-    margin: 2rem auto;
 }
 
 .contact-links{
@@ -345,3 +343,181 @@ form {
       margin-right: 2%; 
  }
  
+
+ /* 425 mobile view */
+@media only screen and (min-width:425px) and (max-width:767px){
+    .main, .about, .experience, .education, .ex{
+        min-width: 425px;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    
+    .main-word{
+        margin: auto;
+        width: 100%;
+        font-size: 1rem;
+
+        text-align: center;
+
+        p{
+            margin: auto 3em;
+            text-justify: inter-word;
+            text-align: justify;
+        }
+    }
+    
+    .main-h1{
+        font-size: 3.5rem;
+    }
+    
+    .main-h3{
+        font-weight: var(--font-semibold);
+        font-size: 2rem;
+    }
+    .main-img-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+
+    .main-img-wrapper::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 30%, rgba(27, 27, 27, 0) 70%, rgba(27, 27, 27, 1) 100%);
+        pointer-events: none; /* So it won't block interactions with the image */
+    }
+
+    .main-img-wrapper::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #1b1b1b 100%);
+        pointer-events: none;
+    }
+
+    .main-img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .about{
+        min-height: 200vh;
+        background: linear-gradient(to bottom, #1b1b1b 60%, black 100%);
+        .about-word{
+            text-align: justify;
+            text-justify: inter-word;
+    
+            .about-h1{
+                text-align: center;
+                font-size: 3.5rem;
+            }
+        }
+    
+       .about-img{
+        margin-top: 2em;
+       }
+    }
+
+    
+    .btn-red{
+        padding: 0.75em 2em;
+        margin: 2rem auto;
+    }
+
+    .experience{
+        min-height: 350vh;
+        background: linear-gradient(to top, #1b1b1b 0%, black 100%);
+
+        .ex-h1{
+            padding-top: 2em;
+        }
+    }
+    
+    .ex{
+        display: flex;
+        flex-direction: column;
+        margin: auto 20px;
+        
+        .card{
+            height: auto;
+            width: 300px;
+        }
+        
+        .card-2{
+            margin-top: 1rem;
+        }   
+
+        .card-container {
+            padding: 20px 16px;
+        }
+        
+        .card-container h4{
+            font-weight: var(--font-semibold);
+        }
+    }  
+
+    .education{
+        padding-bottom: 5rem;
+        background: linear-gradient(to bottom, #1b1b1b 90%, black 100%);
+
+        .educ-h1{
+            margin: auto;
+        }
+    }
+
+    .skills-h1{
+        padding-top: 2em;
+    }
+
+    .skills-div{
+        display: flex;                         
+        padding: 20px 10px 50px 10px;                     
+        margin: auto 1em;
+    }
+
+    .skills .img-svg{
+        width: 100px;
+    }
+
+    .contact{
+        background: linear-gradient(to top, #1b1b1b 70%, black 100%);
+        
+        padding-top: 10rem;
+        .contact-h1{
+            padding-top: 2rem;
+            font-size: 3rem;
+        }
+
+        .contact-links img{
+            margin: auto 20px;
+            height: 50px;
+            width: 50px;
+        }    
+
+        form {
+            max-width: 90%;
+            text-align: center;
+            margin: 20px auto;
+        }
+        
+        #submit {
+            margin-top: 20px;
+            padding: 10px 35px;
+
+        }
+    }
+
+}
+
+ /* 768 tablet view */
+ @media only screen and (min-width:768px){
+
+ }
