@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I am Allen Cabansag, A Web Developer. This is my detailed portfolio on my background, experience and education.">
     <title>Document</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/bootstrap.bundle.js"></script>
-
-
+    <script src="js/bootstrap.min.js"  defer></script>
     <link rel="stylesheet" href="css/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +22,7 @@
         </button>
         
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <a class="navbar-brand" href="#main"><img src="img/absolute/logo.png" class="nav-logo" alt=""></a>
+            <a class="navbar-brand" href="#main"><img src="img/absolute/logo.webp" loading="lazy" class="nav-logo" alt=""></a>
         
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item mx-3"><a href="#about" class="nav-link">About</a></li>
@@ -40,7 +39,7 @@
     <section class="main" id="main">
         <div class="main-word">
             <h1 class="header-h1 main-h1"><span style="color:#8c8c8c">Hi, My Name is</span> Allen Cabansag</h1>
-            <h3 class="main-h3">I am a <span style="color:#A83A2B">Web Developer</span></h3>
+            <h3 class="main-h2">I am a <span style="color:#A83A2B">Web Developer</span></h3>
             <p>
                 I am a Web Programmer with a passion in graphic design,
                 providing simple and elegant solutions. I enjoy collaborating
@@ -56,13 +55,13 @@
         </div>
 
         <div class="main-img-wrapper">
-            <img src="img/absolute/allen_1.png" alt="Allen_1" class = "main-img">
+            <img src="img/absolute/allen_1.webp" alt="Allen_1" class = "main-img">
         </div>
     </section>
 
     <section class="about" id="about">
 
-        <img class="about-img" src="img/absolute/allen_2.png" alt="Allen_2">
+        <img class="about-img" src="img/absolute/allen_2.webp" alt="Allen_2">
 
         <div class="about-word">
             <h1 class="about-h1 header-h1">Who am I?</h1>
@@ -88,25 +87,25 @@
             <div class="ex">
                 <div class="ex-set-1">
                     <div class="card">
-                        <img class="card-img" src="img/absolute/sugarstop.png" alt="sugarstop">
+                        <img class="card-img" src="img/absolute/sugarstop.webp" alt="sugarstop">
                         <div class="card-container">
-                            <h4>SUGARSTOP</h4>
+                            <h2>SUGARSTOP</h2>
                             <p>I LED A PROJECT THAT DEVELOPED A FULLY FUNCTIONAL POINT TO SALE WEBSITE</p>
                         </div>
                     </div>
                     <div class="card card-2">
-                        <img class="card-img" src="img/absolute/evaluation.png" alt="evaluation-form">
+                        <img class="card-img" src="img/absolute/evaluation.webp" alt="evaluation-form">
                         <div class="card-container">
-                            <h4>EVALUATION FORM</h4>
+                            <h2>EVALUATION FORM</h2>
                             <p>HELPED IN DEVELOPNG A SAMPLE EVALUATION FORM THAT BOTH STUDENTS AND TEACHERS CAN USE</p>
                         </div>
                     </div>
                 </div>
                 <div class="ex-set-2">
                     <div class="card">
-                        <img class="card-img" src="img/absolute/ax_fitness.png" alt="ax-fitness">
+                        <img class="card-img" src="img/absolute/ax_fitness.webp" alt="ax-fitness">
                         <div class="card-container">
-                            <h4>AX-FITNESS</h4>
+                            <h2>AX-FITNESS</h2>
                             <p>I LED A PROJECT THAT DEVELOPED A FULLY FUNCTIONAL PROMOTIONAL WEBSITE FOR A LOCAL FITNESS GYM BUSINESS</p>
                         </div>
                     </div>
@@ -121,7 +120,7 @@
 
         <div class="education-content">
             <div class="education-word">
-                <h2 style="color:#79281d">LYCEUM OF ALABANG</h2>
+                <h2>LYCEUM OF ALABANG</h2>
                 <h3>(SY 2021-2022)</h3>
                 <ol>
                     <li>GRADUATED WITH HONORS</li>
@@ -130,7 +129,7 @@
                 </ol>
             </div>
 
-            <img class="educ-img" src="img/absolute/loa.png" alt="loa">
+            <img class="educ-img" src="img/absolute/loa.webp" alt="loa">
         </div>
 
         <div class="education-content">
@@ -138,7 +137,7 @@
             
             <div class="education-word">
                 <div class="educ-header">
-                    <h2 style="color:#79281d">NATIONAL UNIVERSITY OF LAGUNA</h2>
+                    <h2>NATIONAL UNIVERSITY OF LAGUNA</h2>
                     <h3>(SY 2022-2026)</h3>
                 </div>
                 <ol>
@@ -171,9 +170,9 @@
         <h1 class="contact-h1 header-h1">CONTACT ME</h1>
 
         <div class="contact-links">
-            <img class="contact-svg" src="img/svg/linkedin.svg" alt="linkedin"><a href=""></a></img>
-            <img class="contact-svg" src="img/svg/github.svg" alt="github"><a href=""></a></img>
-            <img class="contact-svg" src="img/svg/facebook.svg" alt="facebook"><a href=""></a></img>
+            <a href="https://www.linkedin.com/in/allen-cabansag-80150a235/" target="_blank"><img class="contact-svg" src="img/svg/linkedin.svg" alt="linkedin"></a>
+            <a href="https://github.com/Lentucky" target="_blank"><img class="contact-svg" src="img/svg/github.svg" alt="github"></a>
+            <a href="https://www.facebook.com/profile.php?id=100084598453264" target="_blank"><img class="contact-svg" src="img/svg/facebook.svg" alt="facebook"></a>
         </div>
 
 
