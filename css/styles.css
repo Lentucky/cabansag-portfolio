@@ -204,7 +204,12 @@ section {
     padding: 20px 50px 50px 20px;
     box-sizing: border-box;
     margin: auto 30em;
-    gap: 100px;
+    gap: 70px;
+
+    img{
+        width: 100px;
+        height: auto;
+    }
 }
 
 .skills-h1 {
@@ -456,7 +461,7 @@ section {
 
 
 /* 425 mobile view */
-@media only screen and (min-width:425px) and (max-width:767px) {
+@media only screen and (max-width:767px) {
 
     .main,
     .about,
@@ -469,22 +474,29 @@ section {
         min-height: 100vh;
     }
 
+    .main a{
+        font-size: .60rem;
+    }
+
     .main-word {
-        margin: auto;
-        width: 100%;
-        font-size: 1rem;
+        margin: auto 3rem;
+        font-size: 0.75rem;
 
         text-align: center;
 
         p {
-            margin: auto 3em;
+            margin: auto 3rem;
             text-justify: inter-word;
             text-align: justify;
         }
     }
 
     .main-h1 {
-        font-size: 3.5rem;
+        font-size: 1.25rem;
+    }
+
+    .main-h2 {
+        font-size: 1rem;
     }
 
     .main-h3 {
@@ -541,7 +553,12 @@ section {
 
             .about-h1 {
                 text-align: center;
-                font-size: 3.5rem;
+                font-size: 1.5rem;
+            }
+
+            p{
+                font-size: .90rem;
+                margin: auto -50px;
             }
         }
 
@@ -594,11 +611,25 @@ section {
 
         .educ-h1 {
             margin: auto;
+            font-size: 2rem;
+        }
+
+        .education-content{
+            h2{
+                font-size: 1.25rem;
+            }
+            h3{
+                font-size: 1rem;
+            }
+            ol{
+                font-size: .80rem;
+            }
         }
     }
 
     .skills-h1 {
         padding-top: 2em;
+        font-size: 1.5rem;
     }
 
     .skills-div {
@@ -608,9 +639,34 @@ section {
     }
 
     .skills .img-svg {
-        width: 100px;
+        width: 5rem;
     }
 
+    .contact{
+        margin: auto 5rem;
+
+        h1{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+
+        .container{
+            h4{
+                font-size: 1rem;
+            }
+            p{
+                font-size: 0.75rem;
+            }
+            .card-footer{
+                padding: 0.5rem;
+            }
+            .span{
+                font-size: .25rem;
+            }
+        }
+    }
 }
 
 /* 768 tablet view */
