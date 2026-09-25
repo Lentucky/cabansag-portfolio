@@ -1,283 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="I am Allen Cabansag, A Web Developer. This is my detailed portfolio on my background, experience and education.">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Allen Cabansag — Web Developer portfolio, cozy cafe edition.">
+<title>Allen Cabansag — Web Developer</title>
 
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <a class="navbar-brand" href="#main"><img src="img/absolute/logo.webp" loading="lazy" class="nav-logo" alt=""></a>
-        
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item mx-3"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item mx-3"><a href="#experience" class="nav-link">Experience</a></li>
-                <li class="nav-item mx-3"><a href="#education" class="nav-link">Education</a></li>
-                <li class="nav-item mx-3"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item mx-3"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
+
+<div class="nav-wrap">
+  <div class="nav-pill">
+    <span class="nav-brand">Allen ☕</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<section class="hero" id="main">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow-cup">☕ currently brewing new projects</span>
+      <h1>Hi, I'm Allen Cabansag —<br><span class="accent">a Web Developer</span></h1>
+      <p class="lede">
+        I build simple, elegant web experiences the way I like my coffee: warm,
+        well-balanced, and made with care. I enjoy collaborating with fellow
+        developers and clients to craft work aligned with their goals.
+      </p>
+      <div class="btn-row">
+        <a href="#about" class="btn btn-primary">Read more</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
+      </div>
     </div>
-</nav>
+    <div class="hero-photo-wrap">
+      <div class="ring">
+        <div class="placeholder-fill"><img src="img/absolute/allen_main.jpg" alt="Main Profile"></div>
+      </div>
+      <div class="steam">☕</div>
+    </div>
+  </div>
+</section>
 
+<section class="about reveal" id="about">
+  <div class="container about-inner">
+    <div class="about-photo">
+      <div class="placeholder-fill"><img src="img/absolute/allen_main.jpg" alt="Allen Cabansag"></div>
+    </div>
+    <div class="about-text">
+      <h2>Who am I?</h2>
+      <p>
+        I am Allen Cabansag, a Web Developer homegrown from National University
+        of Laguna. I enjoy working on both graphic and web design, with a
+        strong focus on creating elegant and simplistic models — much like a
+        well-pulled espresso shot, no wasted steps.
+      </p>
+      <p>
+        I work with Sass for front-end design, and PHP with MySQL for
+        back-end work, often with the help of the Laravel framework.
+      </p>
+    </div>
+  </div>
+</section>
 
-    <section class="main" id="main">
-        <div class="main-word">
-            <h1 class="header-h1 main-h1"><span style="color:#8c8c8c">Hi, My Name is</span> Allen Cabansag</h1>
-            <h3 class="main-h2">I am a <span style="color:#A83A2B">Web Developer</span></h3>
-            <p>
-                I am a Web Programmer with a passion in graphic design,
-                providing simple and elegant solutions. I enjoy collaborating
-                with fellow developers and clients to create excellent work
-                aligned with their needs and goals
-            </p>
+<section class="project reveal" id="projects">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
 
-            <a href="#about" class="btn btn-red">Read more?</a>
-        </div>
-        
-        <div class="main-img">
+    <div class="filter-row" id="projectTabs">
+      <button class="filter-chip active" data-group="webdev">Web Development</button>
+      <button class="filter-chip" data-group="data">Data &amp; Machine Learning</button>
+      <button class="filter-chip" data-group="gamedev">Game Development</button>
+    </div>
 
-        </div>
+    <div class="project-group active" data-group="webdev">
+      <div class="project-group-head">
+        <h3>Web Development &amp; Databases</h3>
+        <p class="intro">Here's the web development work that showcases my skills in SQL, back-end architecture, and framework-based builds.</p>
+      </div>
+      <div class="project-grid">
 
-        <div class="main-img-wrapper">
-            <img src="img/absolute/allen_1.webp" alt="Allen_1" class = "main-img">
-        </div>
-    </section>
-
-    <section class="about" id="about">
-
-        <img class="about-img" src="img/absolute/allen_2.webp" alt="Allen_2">
-
-        <div class="about-word">
-            <h1 class="about-h1 header-h1">Who am I?</h1>
-            
-            <p >
-                I am Allen Cabansag, I am a Web Developer
-                homegrown from National University of Laguna.
-                I enjoy working both on graphic and web design,
-                with a strong focus on creating elegant and
-                simplistic models.
-            </p>
-
-            <p>
-                I work using Sass for my front-end design while
-                using my knowledge in PHP and MySQL for the back-end
-                design using the help of the Laravel Framework
-            </p>
-        </div>
-    </section>
-        
-    <section class="experience" id="experience">
-    <h1 class="educ-h1 header-h1 mt-5 pt-5">Projects</h1>
-
-        <div id="projectCarousel" class="carousel slide p-5" data-bs-ride="carousel">
-            <div class="carousel-inner">
-
-            <!-- ITEM 1 -->
-            <div class="carousel-item active">
-                <div class="carousel-item-bg" style="background-image: url('img/samples/ax-fitness.png');">
-                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center h-100">
-                        <h5>AX Fitness</h5>
-                        <p>A project built on purely PHP and MySQL. With a fully functional back-end database with event triggers</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ITEM 2 -->
-            <div class="carousel-item">
-                <div class="carousel-item-bg" style="background-image: url('img/samples/Cinema-Laravel.png');">
-                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center h-100">
-                    <h5>Cinema Website</h5>
-                    <p>A project built with the Laravel Framework and SQLite database.</p>
-                </div>
-                </div>
-            </div>
-
-            <!-- ITEM 3 -->
-            <div class="carousel-item">
-                <div class="carousel-item-bg" style="background-image: url('img/samples/freedom-wall.png');">
-                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center h-100">
-                    <h5>Freedom Wall Website</h5>
-                    <p>A project built with the Laravel Framework and SQLite database. A Freedom Wall website for a terminal project for one of my subjects during Junior Year</p>
-                </div>
-                </div>
-            </div>
-
-            <!-- ITEM 4 -->
-            <div class="carousel-item">
-                <div class="carousel-item-bg" style="background-image: url('img/samples/gosurv.png');">
-                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center h-100">
-                    <h5>GoSurv - Survey System</h5>
-                    <p>A Survey Website similar to Google Forms built purely on MySQL and PHP with Javascript to handle form questions</p>
-                </div>
-                </div>
-            </div>
-
-            <!-- ITEM 5 -->
-            <div class="carousel-item">
-                <div class="carousel-item-bg" style="background-image: url('img/samples/klinika.png');">
-                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center h-100">
-                    <h5>Klinika</h5>
-                    <p>A project built with purely PHP and MySQL. This was built for a challenge done during my Junior Year</p>
-                </div>
-                </div>
-            </div>
-
-
-            </div>
-
-            <!-- CONTROLS -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-
-
-    <section class="education" id="education">
-        <h1 class="educ-h1 header-h1">Education</h1>
-
-        <div class="education-content">
-            <div class="education-word">
-                <h2>LYCEUM OF ALABANG</h2>
-                <h3>(SY 2021-2022)</h3>
-                <ol>
-                    <li>GRADUATED WITH HONORS</li>
-                    <li>BEST IN THESIS WRITING</li>
-                    <li>BEST IN WEB PROGRAMMING</li>
-                </ol>
-            </div>
-
-            <img class="educ-img" src="img/absolute/loa.webp" alt="loa">
+        <div class="project-card">
+          <div class="project-thumb"><img src="img/samples/ax-fitness.png" alt=""></div>
+          <div class="project-body">
+            <h3>AX Fitness</h3>
+            <p>A project built on purely PHP and MySQL, with a fully functional back-end database with event triggers.</p>
+            <div class="tag-row"><span class="tag">PHP</span><span class="tag">MySQL</span></div>
+          </div>
         </div>
 
-        <div class="education-content">
-            <img class="educ-img" src="img/absolute/nu.webp" alt="nu">
-            
-            <div class="education-word">
-                <div class="educ-header">
-                    <h2>NATIONAL UNIVERSITY OF LAGUNA</h2>
-                    <h3>(SY 2022-2026)</h3>
-                </div>
-                <ol>
-                    <li>CREATIVE OFFICER IN STUDENT COUNCIL</li>
-                    <li>DEANS' LISTER 2022-2023</li>
-                    <li>DEANS' LISTER 2023-2024</li>
-                </ol>
-            </div>
+        <div class="project-card">
+          <div class="project-thumb"><img src="img/samples/Cinema-Laravel.png" alt=""></div>
+          <div class="project-body">
+            <h3>Cinema Website</h3>
+            <p>A project built with the Laravel Framework and SQLite database.</p>
+            <div class="tag-row"><span class="tag">Laravel</span><span class="tag">SQLite</span></div>
+          </div>
         </div>
-    </section>
 
-    <section class="skills pt-5" id="skills">
-        <h1 class="skills-h1 header-h1">SKILLS</h1>
-            <div class="skills-div">
-                <img src="img/svg/laravel.svg" alt="laravel" class="img-svg">
-                <img src="img/svg/python.svg" alt="python" class="img-svg">
-                <img src="img/svg/html.svg" alt="html" class="img-svg">
-                <img src="img/svg/css.svg" alt="css" class="img-svg">
-                <img src="img/svg/javascript.svg" alt="javascript" class="img-svg">
-                <img src="img/svg/java.svg" alt="java" class="img-svg">
-                <img src="img/svg/php.svg" alt="php" class="img-svg">
-                <img src="img/svg/python.svg" alt="python" class="img-svg">
-                <img src="img/svg/mysql.svg" alt="solidity" class="img-svg">
-                <img src="img/svg/sqlite.svg" alt="nodejs" class="img-svg">
-            </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h1 class="contact-h1 header-h1">Get In Touch</h1>
-        
-        <p class="text-center text-light mb-5 contact-p" style="max-width: 600px; margin: 0 auto;">
-            I'm currently looking for new opportunities. Whether you have a question or just want to say hi, 
-            feel free to drop me a line. I'll try my best to get back to you!
-        </p>
-
-        <div class="container">
-            <div class="row justify-content-center g-4">
-
-                <div class="col-lg-3 col-md-6">
-                    <a href="mailto:your.cabansagwork@gmail.com" class="card text-decoration-none h-100 bg-dark border-0 shadow-lg contact-card">
-                        
-                        <div class="card-body text-center p-4">
-                            <img src="img/svg/email.svg" alt="Email" class="mb-3" style="width: 50px; height: 50px;">
-                            <h4 class="card-title text-white mb-3">Email Me</h4>
-                            <p class="card-text text-light small mb-0">For any standard inquiries.</p>
-                        </div>
-
-                        <div class="card-footer bg-transparent border-0 pt-0 pb-4 text-center">
-                            <span class="btn btn-outline-danger">Send Email</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <a href="https://www.linkedin.com/in/allen-cabansag-80150a235/" target="_blank" class="card text-decoration-none h-100 bg-dark border-0 shadow-lg contact-card">
-                        
-                        <div class="card-body text-center p-4">
-                            <img src="img/svg/linkedin.svg" alt="LinkedIn" class="mb-3" style="width: 50px; height: 50px;">
-                            <h4 class="card-title text-white mb-3">LinkedIn</h4>
-                            <p class="card-text text-light small mb-0">Let's connect professionally.</p>
-                        </div>
-                        
-                        <div class="card-footer bg-transparent border-0 pt-0 pb-4 text-center">
-                            <span class="btn btn-outline-primary">Connect</span>
-                        </div>
-                    </a>
-                </div>
-                
-                <div class="col-lg-3 col-md-6">
-                    <a href="https://github.com/Lentucky" target="_blank" class="card text-decoration-none h-100 bg-dark border-0 shadow-lg contact-card">
-                        
-                        <div class="card-body text-center p-4">
-                            <img src="img/svg/github.svg" alt="GitHub" class="mb-3" style="width: 50px; height: 50px;">
-                            <h4 class="card-title text-white mb-3">GitHub</h4>
-                            <p class="card-text text-light small mb-0">See my projects and code.</p>
-                        </div>
-
-                        <div class="card-footer bg-transparent border-0 pt-0 pb-4 text-center">
-                            <span class="btn btn-outline-light">View Projects</span>
-                        </div>
-                    </a>
-                </div>
-                
-                <div class="col-lg-3 col-md-6">
-                    <a href="https://www.facebook.com/profile.php?id=100084598453264" target="_blank" class="card text-decoration-none h-100 bg-dark border-0 shadow-lg contact-card">
-                        
-                        <div class="card-body text-center p-4">
-                            <img src="img/svg/facebook.svg" alt="Facebook" class="mb-3" style="width: 50px; height: 50px;">
-                            <h4 class="card-title mb-3">Facebook</h4>
-                            <p class="card-text text-light small mb-0">For a more casual chat.</p>
-                        </div>
-                        
-                        <div class="card-footer bg-transparent border-0 pt-0 pb-4 text-center">
-                            <span class="btn btn-outline-info">Message Me</span>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
+        <div class="project-card">
+          <div class="project-thumb"><img src="img/samples/freedom-wall.png" alt=""></div>
+          <div class="project-body">
+            <h3>Freedom Wall Website</h3>
+            <p>A Laravel + SQLite project for a terminal project during Junior Year.</p>
+            <div class="tag-row"><span class="tag">Laravel</span><span class="tag">SQLite</span></div>
+          </div>
         </div>
-    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="project-card">
+          <div class="project-thumb"><img src="img/samples/gosurv.png" alt=""></div>
+          <div class="project-body">
+            <h3>GoSurv — Survey System</h3>
+            <p>A survey website similar to Google Forms, built purely on MySQL and PHP with JavaScript handling form logic.</p>
+            <div class="tag-row"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">JavaScript</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="img/samples/klinika.png" alt=""></div>
+          <div class="project-body">
+            <h3>Klinika</h3>
+            <p>A project built with purely PHP and MySQL for a challenge during Junior Year.</p>
+            <div class="tag-row"><span class="tag">PHP</span><span class="tag">MySQL</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+        <div class="project-group" data-group="data">
+      <div class="project-group-head">
+        <h3>Data &amp; Machine Learning</h3>
+        <p class="intro">Here's the data-related work that showcases my skills in deep learning, computer vision, and NLP.</p>
+      </div>
+      <div class="project-grid">
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="img/absolute/dipterocarp.jpg" alt=""></div>
+          <div class="project-body">
+            <h3>VGG16-Attention Mechanism for Dipterocarp Species Classification</h3>
+            <p>Developed a deep learning model combining VGG16 with an attention mechanism to classify species of Dipterocarp trees. Completed as a terminal project for Junior Year at National University of Laguna.</p>
+            <div class="tag-row"><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">CNN</span><span class="tag">Attention Mechanisms</span><span class="tag">Computer Vision</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="img/absolute/resnet.jpg" alt=""></div>
+          <div class="project-body">
+            <h3>ResNet-50 Feature Extraction &amp; Clothing Classifier</h3>
+            <p>As solo developer, built a computer vision tool using a pre-trained ResNet-50 architecture to classify apparel attributes (collars, sleeve styles, branding logos) for retail inventory analysis.</p>
+            <div class="tag-row"><span class="tag">PyTorch</span><span class="tag">Python</span><span class="tag">TensorFlow/Keras</span><span class="tag">ResNet-50</span><span class="tag">Computer Vision</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="img/absolute/roberta.png" alt=""></div>
+          <div class="project-body">
+            <h3>XLM-RoBERTa News Classifier</h3>
+            <p>Fine-tuned an XLM-RoBERTa transformer model on the BalitaNLP Dataset for multi-class classification of Filipino news articles. Completed as a terminal project for Junior Year at National University of Laguna.</p>
+            <div class="tag-row"><span class="tag">PyTorch</span><span class="tag">Transformers</span><span class="tag">Hugging Face</span><span class="tag">Python</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="project-group" data-group="gamedev">
+      <div class="project-group-head">
+        <h3>Game Development</h3>
+        <p class="intro">Here's the game development work that showcases my skills in Unity, C#, and 3D modeling.</p>
+      </div>
+      <div class="project-grid">
+
+        <div class="project-card">
+          <div class="project-thumb">Image placeholder</div>
+          <div class="project-body">
+            <h3>Pierre's Bistro</h3>
+            <p>Solo-developed a fast-paced 3D cooking management fan-game inspired by Project Moon's Library of Ruina. Built in Unity's Scriptable Render Pipeline (SRP) with custom 3D character and kitchen modeling in Blender.</p>
+            <div class="tag-row"><span class="tag">Unity 3D (SRP)</span><span class="tag">C#</span><span class="tag">Blender</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb">Image placeholder</div>
+          <div class="project-body">
+            <h3>Lady Makiling Defense</h3>
+            <p>Developed a video game for the QS ImpACT Skills Challenge promoting nature conservation. Landed as one of the Top 10 Finalists for the challenge.</p>
+            <div class="tag-row"><span class="tag">Unity</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+</section>
+
+<section class="experience reveal" id="experience">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+    <div class="exp-card">
+      <div class="exp-icon">🏢</div>
+      <div style="flex:1; min-width: 240px;">
+        <div class="exp-head">
+          <h3>California Clothing Inc.</h3>
+          <span class="exp-date">2025 — 2026</span>
+        </div>
+        <ul>
+          <li>Developed a Loyalty Program with OTP Authentication</li>
+          <li>Developed a ResNet Clothing Classification Model</li>
+          <li>Helped in IT Helpdesk, Networking and Troubleshooting</li>
+        </ul>
+        <div class="exp-photo">
+          <img src="img/absolute/CCI.jpg" alt="California Clothing Inc.">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="education reveal" id="education">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="edu-card-text">
+          <h3>Lyceum of Alabang</h3>
+          <span class="edu-date">SY 2021 — 2022</span>
+          <ul>
+            <li>Graduated with Honors</li>
+            <li>Best in Thesis Writing</li>
+            <li>Best in Web Programming</li>
+          </ul>
+        </div>
+        <div class="edu-photo">
+          <img src="img/absolute/loa.webp" alt="Lyceum of Alabang">
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-card-text">
+          <h3>National University of Laguna</h3>
+          <span class="edu-date">SY 2022 — 2026</span>
+          <ul>
+            <li>Graduated Cum Laude</li>
+            <li>Creative Officer, Student Council</li>
+            <li>Consistent Dean's Lister 2022–2026</li>
+          </ul>
+        </div>
+        <div class="edu-photo">
+          <img src="img/absolute/nu.webp" alt="National University of Laguna">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="awards reveal" id="awards">
+  <div class="container">
+    <h2 class="section-title">Awards &amp; Certifications</h2>
+    <div class="award-grid">
+
+      <div class="project-card">
+        <div class="award-thumb"><img src="img/absolute/tesdaliteracy.webp" alt=""></div>
+        <div class="project-body">
+          <h3>Microsoft Digital Literacy</h3>
+          <p>Issued by TESDA (Technical Education and Skills Development Authority) — Feb 2022. Covers navigating the digital world through reading, writing, technical skills, and critical thinking.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="award-thumb"><img src="img/absolute/tesdasmart.webp" alt=""></div>
+        <div class="project-body">
+          <h3>SMART Technopreneurship 101</h3>
+          <p>Issued by TESDA — Dec 2021. Covers the competence required to undertake effective entrepreneurial knowledge and practical skills to form and develop a technology-based venture.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="award-thumb"><img src="img/absolute/qsimpact.jpg" alt=""></div>
+        <div class="project-body">
+          <h3>QS ImpACT Skills Challenge 2025 — Finalist</h3>
+          <p>Issued by QS ImpACT — May 2025. Landed as a Top 10 Finalist for a game development submission focused on nature conservation. Skills: Project Management, Game Development.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="award-thumb"><img src="img/absolute/CSSNC2.png" alt=""></div>
+        <div class="project-body">
+          <h3>Computer System Servicing NC II</h3>
+          <p>Issued by TESDA — Dec 2021. National Certificate covering computer hardware setup, servicing, and troubleshooting.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="award-thumb"><img src="img/absolute/forage.webp" alt=""></div>
+        <div class="project-body">
+          <h3>Software Engineering Job Simulation</h3>
+          <p>Issued by JPMorgan Chase &amp; Co. via Forage — July 2026. Completed practical tasks in project setup, Kafka integration, H2 integration, and REST API integration and controllers.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="skills reveal" id="skills">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="filter-row">
+      <button class="filter-chip active" data-filter="all">☕ All</button>
+      <button class="filter-chip" data-filter="frontend">Frontend</button>
+      <button class="filter-chip" data-filter="backend">Backend</button>
+      <button class="filter-chip" data-filter="language">Languages</button>
+      <button class="filter-chip" data-filter="game">Game Dev</button>
+      <button class="filter-chip" data-filter="tools">Tools</button>
+    </div>
+    <div class="skill-grid" id="skillGrid">
+      <div class="skill-chip" data-cat="backend"><div class="skill-icon">🅻</div><span>Laravel</span></div>
+      <div class="skill-chip" data-cat="backend"><div class="skill-icon">🍃</div><span>Spring</span></div>
+      <div class="skill-chip" data-cat="tools"><div class="skill-icon">📦</div><span>Maven</span></div>
+      <div class="skill-chip" data-cat="language"><div class="skill-icon">🐍</div><span>Python</span></div>
+      <div class="skill-chip" data-cat="frontend"><div class="skill-icon">🌐</div><span>HTML</span></div>
+      <div class="skill-chip" data-cat="frontend"><div class="skill-icon">🎨</div><span>CSS</span></div>
+      <div class="skill-chip" data-cat="frontend"><div class="skill-icon">⚛️</div><span>React</span></div>
+      <div class="skill-chip" data-cat="language"><div class="skill-icon">🟨</div><span>JavaScript</span></div>
+      <div class="skill-chip" data-cat="language"><div class="skill-icon">☕</div><span>Java</span></div>
+      <div class="skill-chip" data-cat="language"><div class="skill-icon">🎮</div><span>C#</span></div>
+      <div class="skill-chip" data-cat="backend"><div class="skill-icon">🐘</div><span>PHP</span></div>
+      <div class="skill-chip" data-cat="backend"><div class="skill-icon">🗄️</div><span>MySQL</span></div>
+      <div class="skill-chip" data-cat="backend"><div class="skill-icon">🗃️</div><span>SQLite</span></div>
+      <div class="skill-chip" data-cat="game"><div class="skill-icon">🕹️</div><span>Unity</span></div>
+      <div class="skill-chip" data-cat="game"><div class="skill-icon">📖</div><span>RenPy</span></div>
+      <div class="skill-chip" data-cat="tools"><div class="skill-icon">🔧</div><span>Git</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section reveal" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <h3>Let's grab a coffee (virtually)</h3>
+      <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, feel free to drop me a line — I'll get back to you.</p>
+      <div class="social-list">
+        <a class="social-row" href="mailto:your.cabansagwork@gmail.com">
+          <div class="social-icon">✉️</div>
+          <div><span class="label">Email</span><span class="value">your.cabansagwork@gmail.com</span></div>
+        </a>
+        <a class="social-row" href="https://www.linkedin.com/in/allen-cabansag-80150a235/" target="_blank" rel="noopener noreferrer">
+          <div class="social-icon">in</div>
+          <div><span class="label">LinkedIn</span><span class="value">Connect professionally</span></div>
+        </a>
+        <a class="social-row" href="https://github.com/Lentucky" target="_blank" rel="noopener noreferrer">
+          <div class="social-icon">🐙</div>
+          <div><span class="label">GitHub</span><span class="value">See my projects</span></div>
+        </a>
+        <a class="social-row" href="https://www.facebook.com/profile.php?id=100084598453264" target="_blank" rel="noopener noreferrer">
+          <div class="social-icon">f</div>
+          <div><span class="label">Facebook</span><span class="value">Casual chat</span></div>
+        </a>
+      </div>
+    </div>
+    <div class="cta-card">
+      <div class="steam-icon">☕</div>
+      <h3>Got a project in mind?</h3>
+      <p>I'm happiest solving problems with a warm cup nearby. Reach out and let's talk it through.</p>
+      <a href="mailto:your.cabansagwork@gmail.com" class="btn btn-primary" style="justify-content:center;">Send Email</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Allen Cabansag. Made with care (and coffee).
+</footer>
+
+<script>
+  // Scroll-reveal for sections
+  const revealEls = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+  revealEls.forEach(el => revealObserver.observe(el));
+
+  // Skill filter with fade transition
+  const chips = document.querySelectorAll('.skills .filter-chip');
+  const skills = document.querySelectorAll('.skill-chip');
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      const f = chip.dataset.filter;
+      skills.forEach(s => {
+        const show = (f === 'all' || s.dataset.cat === f);
+        if (show) {
+          s.style.display = '';
+          requestAnimationFrame(() => s.classList.remove('filtered-out'));
+        } else {
+          s.classList.add('filtered-out');
+          setTimeout(() => { if (s.classList.contains('filtered-out')) s.style.display = 'none'; }, 350);
+        }
+      });
+    });
+  });
+
+  // Project tab pagination with fade/slide transition
+  const projectTabs = document.querySelectorAll('#projectTabs .filter-chip');
+  const projectGroups = document.querySelectorAll('.project-group');
+  projectTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      if (tab.classList.contains('active')) return;
+      projectTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const g = tab.dataset.group;
+      projectGroups.forEach(group => {
+        if (group.dataset.group === g) {
+          group.classList.add('active');
+        } else {
+          group.classList.remove('active');
+        }
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
